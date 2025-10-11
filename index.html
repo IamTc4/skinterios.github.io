@@ -35,6 +35,11 @@
   <header>
     <nav>
       <div class="logo"><img src="images/logo.jpg" alt="Sai Krupa Furniture Logo" class="site-logo" /></div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -190,5 +195,13 @@
       <div id="galleryImages" class="gallery-images"></div>
     </div>
   </div>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
